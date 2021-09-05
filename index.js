@@ -15,6 +15,7 @@ const server = new ApolloServer({
     subscriptions: {
         path: '/subscriptions',
     },
+    playground: false,
 });
 
 mongoose.connect(DATABASE, { useNewUrlParser: true, useUnifiedTopology: true })
